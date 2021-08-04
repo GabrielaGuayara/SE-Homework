@@ -22,5 +22,5 @@ if (found==true)
 }
 else 
 {
-    console.log ('Number not found')
+    console.log ('Number '+num+ ' not found')
 }
