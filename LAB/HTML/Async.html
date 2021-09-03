@@ -1,0 +1,154 @@
+<html>
+<body>
+
+<h2>Asynchronous JavaScript </h2>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<h3 id="h31"></h3>
+<h3 id="h32"></h3>
+<p id="p1"></p>
+<h3 id="h33"></h3>
+
+<script>
+setTimeout(myFunction,3000);
+
+setTimeout(() => document.getElementById("h31").innerHTML = "Good Morning!",1300);
+
+
+function myFunction() {
+     document.getElementById("p1").innerHTML = "Hello There!!";
+}
+
+
+
+document.getElementById("h32").innerHTML = "A 'Hello' greeting message will be printing soon";
+document.getElementById("h33").innerHTML = "closing program...";
+
+</script>
+
+
+</body>
+</html>
+<!-- // function mht_data()
+// {
+//     fetch('https://data.cityofnewyork.us/resource/erm2-nwe9.json?agency=NYPD&borough=MANHATTAN')
+//     .then((response) => data=response.json())
+//     .then((data)=> displayData(data))
+
+
+//     function displayData(d)
+//     {
+//         var user=document.getElementById('searchBar')
+//         var ct2=document.getElementById('container2')
+//         if (user.value>0)
+//         {
+//             for ( var i=1; i<=user.value;i++)
+//             {
+//                 var ct3=document.createElement('div')
+//                 ct3.setAttribute('id',`ctr3${[i]}`)
+//                 ct2.append(ct3)
+//                 var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                 ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`
+//             }
+//         }
+//         else{
+//                 for ( var i=1; i<=10;i++)
+//                 {
+//                     var ct3=document.createElement('div')
+//                     ct3.setAttribute('id',`ctr3${[i]}`)
+//                     ct2.append(ct3)
+//                     var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                     ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`}}}}
+// function queens_data()
+// {
+//     fetch('https://data.cityofnewyork.us/resource/erm2-nwe9.json?agency=NYPD&borough=QUEENS')
+//     .then((response) => data=response.json())
+//     .then((data)=> displayData(data))
+
+
+//     function displayData(d)
+//     {
+//         var user=document.getElementById('searchBar')
+//         var ct2=document.getElementById('container2')
+//         if (user.value>0)
+//         {
+//             for ( var i=1; i<=user.value;i++)
+//             {
+//                 var ct3=document.createElement('div')
+//                 ct3.setAttribute('id',`ctr3${[i]}`)
+//                 ct2.append(ct3)
+//                 var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                 ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`
+//             }
+//         }
+//         else{
+//                 for ( var i=1; i<=10;i++)
+//                 {
+//                     var ct3=document.createElement('div')
+//                     ct3.setAttribute('id',`ctr3${[i]}`)
+//                     ct2.append(ct3)
+//                     var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                     ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`}}}}
+
+                    
+// function brx_data()
+// {
+//     fetch('https://data.cityofnewyork.us/resource/erm2-nwe9.json?agency=NYPD&borough=BRONX')
+//     .then((response) => data=response.json())
+//     .then((data)=> displayData(data))
+
+
+//     function displayData(d)
+//     {
+//         var user=document.getElementById('searchBar')
+//         var ct2=document.getElementById('container2')
+//         if (user.value>0)
+//         {
+//             for ( var i=1; i<=user.value;i++)
+//             {
+//                 var ct3=document.createElement('div')
+//                 ct3.setAttribute('id',`ctr3${[i]}`)
+//                 ct2.append(ct3)
+//                 var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                 ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`
+//             }
+//         }
+//         else{
+//                 for ( var i=1; i<=10;i++)
+//                 {
+//                     var ct3=document.createElement('div')
+//                     ct3.setAttribute('id',`ctr3${[i]}`)
+//                     ct2.append(ct3)
+//                     var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                     ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`}}}}
+// function stland_data()
+// {
+//     fetch('https://data.cityofnewyork.us/resource/erm2-nwe9.json?agency=NYPD&borough=STATEN ISLAND')
+//     .then((response) => data=response.json())
+//     .then((data)=> displayData(data))
+
+
+//     function displayData(d)
+//     {
+//         var user=document.getElementById('searchBar')
+//         var ct2=document.getElementById('container2')
+//         if (user.value>0)
+//         {
+//             for ( var i=1; i<=user.value;i++)
+//             {
+//                 var ct3=document.createElement('div')
+//                 ct3.setAttribute('id',`ctr3${[i]}`)
+//                 ct2.append(ct3)
+//                 var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                 ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`
+//             }
+//         }
+//         else{
+//                 for ( var i=1; i<=10;i++)
+//                 {
+//                     var ct3=document.createElement('div')
+//                     ct3.setAttribute('id',`ctr3${[i]}`)
+//                     ct2.append(ct3)
+//                     var dscrip=document.createElement('h').textContent=d[i].descriptor 
+//                     ct3.innerHTML+= dscrip + ` <button onclick="document.getElementById('ctr3${[i]}').innerHTML+='${d[i].resolution_description}'">WHAT DID THE POLICE DO</button>`}}}} -->

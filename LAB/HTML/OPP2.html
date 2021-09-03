@@ -1,0 +1,80 @@
+<!-- Create an Animal class. 
+The class will have animal type , age, color, legs, superPower attributes
+Create two objects of this class - both with a unique superPower
+Create two  methods for this class - named animalSuperPower() and animalDetails() that would display animal superpower and animal details respectively. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Oriented Programming Practice</title>
+</head>
+<body>
+<h1 id="animals"></h1>
+<p id="p1"></p>
+<br>
+
+<script>
+    var text="<ul>";
+    const ANIMALS="<u>"+"Animals class using OOP"+"</u>";    
+var idnum=0;
+    
+    class Animal {
+    static count=0;
+        constructor(type, age, color, legs, superPower) {
+
+            this.type = type;
+            this.age = age;
+            this.color = color;
+            this.legs = legs;
+            this.superPower = superPower;
+            this.id = ++idnum;
+        } 
+        
+    
+        animalSuperPower()
+        {
+        
+        text=text+this.type+" have superpowrs, such as "+this.superPower;
+        return text;
+        }
+        
+        animalDetails()
+        {
+        text=text+"<li>"+this.type+", is age is "+ this.age+ ", is color could be " +this.color+'.They have '+this.legs+"</li>";
+        return text;
+        
+        }
+    
+        
+    }
+    
+    
+    document.getElementById("animals").innerHTML=ANIMALS;
+    
+    const anim1 = new Animal("Amphibians", "could live 12 years","dark green, brown, or black", "four limbs", "water manipulation and healing" );
+    anim1.animalDetails();
+    anim1.animalSuperPower();
+    
+
+    
+    
+    const anim2 = new Animal("Birds", " could live 100 years", "blue and iridescent", "two legs", "detect the Earth's magnetic field");
+    anim2.animalDetails();
+    anim2.animalSuperPower();
+    
+
+    
+
+    text=text+"</ul>";
+    document.getElementById("p1").innerHTML = text;
+    
+    
+    </script>
+    
+    <style>
+        body{
+            background-color: rgb(175, 245, 245);
+        }
+    </style>
+    </body>
+    </html>
+    

@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+        <title>JS function in DOM</title>
+    </head>
+
+    <body bgcolor="purple">
+            <h1>JavaScript Functions in Document Object Model</h1>
+            <div id='div1' onclick="addition(2,4)">Click here</div>
+            <div id='div2' onclick="reversestring()">This sentence will be reverse</div>
+            <div id="div3" onclick=" this.innerHTML += 'This text will be showed up after a click' ">This is text inside a div tag. </div>
+        <script>
+            function addition (n1, n2)
+            {
+                sum=0;
+                sum = n1+n2;
+                document.getElementById("div1").innerHTML = "The resul of the sum is " +sum;
+            }
+
+        function reversestring() 
+            {
+                str='This sentence will be reversed'
+                str=str.split(' ').reverse().join(' ')
+                document.getElementById("div2").innerHTML = str;
+            }
+        </script>
+        <style>
+            h1{
+            font-size: 30px;
+            }
+            #div1
+            {
+            background-color: rgb(230, 233, 62);
+            margin: 10px;
+            padding: 3px;
+            border: solid;
+            }
+            #div2
+            {
+            background-color: rgb(180, 157, 23);
+            margin: 10px;
+            padding: 3px;
+            border: solid;
+            }
+            #div3
+            {
+            background-color: rgb(62, 233, 85);
+            margin: 10px;
+            padding: 3px;
+            border: solid;
+            }
+            
+        </style>
+    <body>
+
+    <html>
