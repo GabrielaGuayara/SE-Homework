@@ -1,7 +1,7 @@
 import './App.css';
 import React, {Component} from 'react';
-import Groceries from './Groceries';
-import Listitems from './Listitems'
+import Groceries from './components/Groceries';
+import Listitems from './components/Listitems'
 import Cart from './img/cart.png'
 
 class App extends Component{
